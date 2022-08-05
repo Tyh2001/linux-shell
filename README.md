@@ -63,7 +63,7 @@ node -v
 
 在 [Git 官网](https://git-scm.com/download/linux) 提供了简单快捷的安装命令，一行命令即可实现安装。
 
-## 安装 Pnpm
+## 🥕 安装 Pnpm
 
 安装了 `node` 之后，可以直接执行命令进行安装，但是安装完成之后需要重启终端，否则不生效。
 
