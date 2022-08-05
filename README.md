@@ -4,33 +4,14 @@
 
 近期开始学习了一些关于 `Linux` 相关的命令和新的可玩性的骚操作，一些命令笔记和遇到的问题，在这里记录一下，持续更新中……
 
-## 🚧 基本命令
+## 🦚 配置服务器
 
-```shell
-ssh name@ip # 登陆服务器
+配置服务器推荐使用 [宝塔](https://www.bt.cn/new/index.html) 进行配置使用，非常方便
 
-cd xxx # 进入指定目录
+另外这里推荐两款服务器管理软件：
 
-cd .. # 退到上一层目录
-
-cd / # 进入主目录
-
-sudo -i # 切换 root 用户
-
-rm -rf xxx/* # 删除 xxx 目录中的所有文件
-
-mkdir xxx # 新建文件夹
-
-touch xxx # 新建文件
-
-vim xxx # 编辑文件
-
-vi xxx # 编辑文件
-
-cat xxx # 查看文件内容
-
-ll # 查看当前目录所有文件
-```
+- [WinSCP](https://winscp.net/eng/docs/lang:chs) WinSCP 是一个 Windows 环境下使用的 SSH 的开源图形化 SFTP 客户端。同时支持 SCP 协议。它的主要功能是在本地与远程计算机间安全地复制文件，并且可以直接编辑文件。
+- [xShell](https://www.xshell.com/zh/xshell/) 这是业界最强大的 SSH 客户机。
 
 ## 🚀 安装 node
 
@@ -92,6 +73,34 @@ npm install -g pnpm
 
 ```shell
 curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+
+## 🚧 基本命令
+
+```shell
+ssh name@ip # 登陆服务器
+
+cd xxx # 进入指定目录
+
+cd .. # 退到上一层目录
+
+cd / # 进入主目录
+
+sudo -i # 切换 root 用户
+
+rm -rf xxx/* # 删除 xxx 目录中的所有文件
+
+mkdir xxx # 新建文件夹
+
+touch xxx # 新建文件
+
+vim xxx # 编辑文件
+
+vi xxx # 编辑文件
+
+cat xxx # 查看文件内容
+
+ll # 查看当前目录所有文件
 ```
 
 ## ⏳ 错误处理
