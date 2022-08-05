@@ -1,6 +1,10 @@
 # Linux-shell
 
-## 基本命令
+## 🍦 前言
+
+近期开始学习了一些关于 `Linux` 相关的命令和新的可玩性的骚操作，一些命令笔记和遇到的问题，在这里记录一下，持续更新中……
+
+## 🚧 基本命令
 
 ```shell
 ssh name@ip # 登陆服务器
@@ -28,7 +32,69 @@ cat xxx # 查看文件内容
 ll # 查看当前目录所有文件
 ```
 
-## 错误处理
+## 🚀 安装 node
+
+1. 首先需要在 [node](http://kik.cn/download/) 官网下载 `Linux 二进制文件 (x64)` 安装包
+
+2. 将下载的压缩包上传到 linux 服务器 `/usr/local` 目录下
+
+3. 将 `tar` 文件解压，执行命令：
+
+```shell
+tar -xvf node-xxxx.tar
+```
+
+4. 改文件夹的名字，改成 `node`，执行命令
+
+```shell
+mv node-xxx node
+```
+
+5. 建立软连接，按序执行下面命令：
+
+```shell
+ln -s /usr/local/nodejs/bin/node /usr/local/bin
+
+ln -s /usr/local/nodejs/bin/npm /usr/local/bin
+```
+
+6. 修改环境变量，执行命令：
+
+```shell
+export PATH=$PATH:/usr/local/node/bin
+```
+
+7. 修改以后执行生效，执行命令：
+
+```shell
+source /etc/profile
+```
+
+8. 测试：
+
+```shell
+node -v
+```
+
+## 🛰️ 安装 Git
+
+在 [Git 官网](https://git-scm.com/download/linux) 提供了简单快捷的安装命令，一行命令即可实现安装。
+
+## 安装 Pnpm
+
+安装了 `node` 之后，可以直接执行命令进行安装，但是安装完成之后需要重启终端，否则不生效。
+
+```shell
+npm install -g pnpm
+```
+
+或者也可以通过 [Pnpm 官网](https://pnpm.io/zh/installation) 提供的脚本命令进行安装：
+
+```shell
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+
+## ⏳ 错误处理
 
 - 错误 1
 
