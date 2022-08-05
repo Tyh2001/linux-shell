@@ -2,6 +2,8 @@
 
 ## 🍦 前言
 
+大家好，我是[田同学](https://github.com/Tyh2001)，大家可以加我微信 `VirgoTyh` 一起共同学习。
+
 近期开始学习了一些关于 `Linux` 相关的命令和新的可玩性的骚操作，一些命令笔记和遇到的问题，在这里记录一下，分享给大家~
 
 ## 🦚 配置服务器
@@ -128,3 +130,29 @@ rm: cannot remove 'blog/.user.ini': Operation not permitted
 ```shell
 chattr -i .user.ini
 ```
+
+## 🐬 自动化打包部署
+
+安装了 `node` `git` `pnpm` 之后，就可以直接在服务器上拉取 github 仓库的代码，接下来安装依赖就可以在服务器上搭建一个和远程仓库一样的项目了。
+
+接下来就可以编写一个 `shell` 脚本进行自动化执行，自动拉取最新代码，自动安装依赖，自动打包，新建 `xxx.sh` 文件，代码如下：
+
+```shell
+cd /xxx/xxxx/xxx # 进入服务器仓库的地址
+
+git pull # 拉取最新代码
+
+pnpm i # 安装依赖
+
+pnpm build # 打包
+```
+
+接下来每次需要更新网站的时候，就可以执行一下脚本，就可以实现自动化了，再使用宝塔工具将网站目录指向打包后的 `dist` 文件夹即可。
+
+## 🍀 写在最后
+
+也欢迎加我微信共同学习：
+
+- 仓库：`https://github.com/Tyh2001/Linux-shell`
+- 微信：`VirgoTyh`（加好友邀请加入微信群）
+- Github: `https://github.com/Tyh2001`
